@@ -3,38 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <title>Stanley Okafor | Biostatistics Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      color: #444;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    a {
+      text-decoration: none;
+      color: #0b57d0;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .tagline {
+      color: #555;
+    }
+  </style>
 </head>
 
-<body style="font-family: Arial; max-width: 900px; margin: auto; padding: 40px;">
+<body>
 
+  <!-- HERO -->
   <h1>Stanley Okafor</h1>
-  <h2>Biostatistician | Statistical Programmer</h2>
+  <div class="subtitle">Biostatistician | Statistical Programmer</div>
 
-  <p>
-    Simulation Studies • Bayesian Statistics • Evidence Synthesis • Clinical Trials
-  </p>
+  <div class="tagline">
+    Simulation Studies • Bayesian Statistics • Evidence Synthesis • Clinical Trials • HTA
+  </div>
 
-  <hr>
+  <!-- ABOUT -->
+  <div class="section">
+    <h2>About</h2>
+    <p>
+      I am a biostatistician focused on simulation studies, Bayesian modeling, mixed-effects models,
+      and evidence synthesis for clinical research and health technology assessment.
+    </p>
+  </div>
 
-  <h3>Featured Work</h3>
+  <!-- PROJECTS -->
+  <div class="section">
+    <h2>Featured Projects</h2>
 
-  <ul>
-    <li>
-      <a href="projects/thesis.html">
-        Federated Synthetic Data Analysis (Master’s Thesis)
-      </a>
-    </li>
+    <div class="card">
+      <h3>
+        <a href="projects/thesis.html">
+          Federated Synthetic Data Analysis (Master’s Thesis)
+        </a>
+      </h3>
+      <p>
+        Large-scale simulation study evaluating privacy-preserving mixed-effects models using synthetic data.
+      </p>
+    </div>
 
-    <li>Bayesian Mixed Models</li>
-    <li>Survival Analysis</li>
-    <li>Network Meta-analysis</li>
-  </ul>
+    <div class="card">
+      <h3>Bayesian Mixed Models</h3>
+      <p>
+        Hierarchical modeling and posterior inference using R and Stan.
+      </p>
+    </div>
 
-  <hr>
+    <div class="card">
+      <h3>Survival Analysis</h3>
+      <p>
+        Time-to-event modeling and hazard estimation in clinical trial settings.
+      </p>
+    </div>
 
-  <h3>Links</h3>
+    <div class="card">
+      <h3>Network Meta-analysis</h3>
+      <p>
+        Evidence synthesis and indirect treatment comparisons (ML-NMR, MAIC, STC).
+      </p>
+    </div>
 
-  <a href="https://github.com/stanificent">GitHub</a>
+  </div>
+
+  <!-- LINKS -->
+  <div class="section">
+    <h2>Links</h2>
+
+    <p>
+      <a href="https://github.com/stanificent">GitHub</a>
+    </p>
+  </div>
 
 </body>
 </html>
