@@ -1,1 +1,110 @@
+/* =========================
+   GLOBAL STYLE SYSTEM
+   Biostatistics Portfolio
+   Stanley Okafor
+========================= */
 
+:root {
+  --primary: #0b3d91;
+  --secondary: #1f2937;
+  --accent: #2563eb;
+  --background: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: var(--secondary);
+  margin-top: 0;
+}
+
+p {
+  color: var(--text);
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+.navbar a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: var(--accent);
+}
+
+/* Hero */
+.hero {
+  padding: 60px 0 30px 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--muted);
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background: var(--accent);
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 14px;
+}
