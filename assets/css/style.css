@@ -1,110 +1,172 @@
 /* =========================
-   GLOBAL STYLE SYSTEM
-   Biostatistics Portfolio
-   Stanley Okafor
+   BIOMEDICAL / BIOSTATISTICS PORTFOLIO
+   UPGRADED DESIGN SYSTEM
 ========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   --primary: #0b3d91;
-  --secondary: #1f2937;
   --accent: #2563eb;
-  --background: #ffffff;
   --text: #111827;
   --muted: #6b7280;
   --border: #e5e7eb;
+  --bg: #ffffff;
+  --soft: #f8fafc;
+}
+
+/* GLOBAL RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--background);
+  font-family: "Inter", Arial, sans-serif;
+  background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-/* Layout */
+/* CONTAINER */
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 40px 20px;
 }
 
-/* Typography */
-h1, h2, h3 {
-  color: var(--secondary);
-  margin-top: 0;
-}
-
-p {
-  color: var(--text);
-}
-
-/* Navigation */
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 18px 20px;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
-  background: white;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
 .navbar a {
-  margin-left: 15px;
+  margin-left: 16px;
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--text);
   font-weight: 500;
+  font-size: 14px;
 }
 
 .navbar a:hover {
   color: var(--accent);
 }
 
-/* Hero */
+/* HERO */
 .hero {
-  padding: 60px 0 30px 0;
+  padding: 80px 0 40px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
 }
 
 .subtitle {
   font-size: 18px;
   color: var(--muted);
+  margin-bottom: 20px;
 }
 
-/* Cards */
-.card {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 15px;
-  transition: 0.2s;
-}
-
-.card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-/* Buttons */
+/* BUTTONS */
 .button {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 16px;
   background: var(--primary);
   color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  font-weight: 500;
   margin-right: 10px;
+  transition: all 0.2s ease;
 }
 
 .button:hover {
   background: var(--accent);
+  transform: translateY(-2px);
 }
 
-/* Footer */
-footer {
+/* SECTIONS */
+.section {
   margin-top: 60px;
-  padding-top: 20px;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* CARDS → RESEARCH STYLE */
+.card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+/* LINKS */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 80px;
+  padding: 30px 0;
   border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: 14px;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin: 8px 10px 0 0;
+    display: inline-block;
+  }
+}
+
