@@ -235,4 +235,25 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+body.dark-mode {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.dark-mode .card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+body.dark-mode .navbar {
+  background: rgba(15, 23, 42, 0.9);
+}
+
+body.dark-mode a {
+  color: #60a5fa;
+}
+
+body.dark-mode .button {
+  background: #2563eb;
+}
 
