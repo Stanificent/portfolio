@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <title>Stanley Okafor | Biostatistics Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="assets/css/style.css">
 
+  <!-- (you can remove this inline style later if you want full CSS control) -->
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -49,46 +51,45 @@
     a:hover {
       text-decoration: underline;
     }
-
-    .tagline {
-      color: #555;
-    }
   </style>
 </head>
 
 <body>
+
 <div class="container">
 
+  <!-- NAVBAR -->
   <div class="navbar">
-  <div><strong>Stanley Okafor</strong></div>
+    <div><strong>Stanley Okafor</strong></div>
 
-  <div>
-    <a href="index.html">Home</a>
-    <a href="pages/projects.html">Projects</a>
-    <a href="pages/skills.html">Skills</a>
-    <a href="projects/master-thesis/index.html">Thesis</a>
-    <a href="assets/documents/Stanley_Okafor_CV.pdf">CV</a>
-    <a href="https://github.com/stanificent" target="_blank">GitHub</a>
-    <button onclick="toggleDarkMode()" class="button">Dark Mode</button>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="pages/projects.html">Projects</a>
+      <a href="pages/skills.html">Methods</a>
+      <a href="projects/master-thesis/index.html">Thesis</a>
+      <a href="pages/cv.html">CV</a>
+      <a href="https://github.com/stanificent" target="_blank">GitHub</a>
+
+      <button onclick="toggleDarkMode()" class="button">Dark Mode</button>
+    </div>
   </div>
-</div>
 
   <!-- HERO -->
   <div class="hero">
-  <h1>Stanley Okafor</h1>
+    <h1>Stanley Okafor</h1>
 
-  <div class="subtitle">
-    Biostatistician | Statistical Programmer
+    <div class="subtitle">
+      Biostatistician | Statistical Programmer
+    </div>
+
+    <p>
+      Developing reproducible statistical methods for clinical research, evidence synthesis,
+      Bayesian modelling, and privacy-preserving healthcare analytics.
+    </p>
+
+    <a class="button" href="pages/projects.html">View Projects</a>
+    <a class="button" href="assets/documents/Stanley_Okafor_CV.pdf">Download CV</a>
   </div>
-
-  <p>
-    Developing reproducible statistical methods for clinical research, evidence synthesis,
-    Bayesian modelling, and privacy-preserving healthcare analytics.
-  </p>
-
-  <a class="button" href="pages/projects.html">View Projects</a>
-  <a class="button" href="assets/documents/Stanley_Okafor_CV.pdf">Download CV</a>
-</div>
 
   <!-- ABOUT -->
   <div class="section">
@@ -101,80 +102,90 @@
 
   <!-- PROJECTS -->
   <div class="section">
-  <h2>Featured Projects</h2>
+    <h2>Featured Projects</h2>
 
-  <div class="projects-grid">
+    <div class="projects-grid">
 
-    <!-- PROJECT 1 -->
-    <div class="project-card">
-      <h3>
-        <a href="projects/master-thesis.html">
-          Federated Synthetic Data Analysis
-        </a>
-      </h3>
+      <!-- PROJECT 1 -->
+      <div class="project-card">
+        <h3>
+          <a href="projects/master-thesis/index.html">
+            Federated Synthetic Data Analysis
+          </a>
+        </h3>
 
-      <p>
-        Large-scale simulation study on privacy-preserving mixed-effects models for healthcare data synthesis.
-      </p>
+        <p>
+          Large-scale simulation study on privacy-preserving mixed-effects models for healthcare data synthesis.
+        </p>
 
-      <div class="tags">
-        <span class="tag">Simulation</span>
-        <span class="tag">Mixed Models</span>
-        <span class="tag">Privacy</span>
-        <span class="tag">R</span>
+        <div class="tags">
+          <span class="tag">Simulation</span>
+          <span class="tag">Mixed Models</span>
+          <span class="tag">Privacy</span>
+          <span class="tag">R</span>
+        </div>
       </div>
-    </div>
 
-    <!-- PROJECT 2 -->
-    <div class="project-card">
-      <h3>Bayesian Mixed Models</h3>
+      <!-- PROJECT 2 -->
+      <div class="project-card">
+        <h3>Bayesian Mixed Models</h3>
 
-      <p>
-        Hierarchical Bayesian modelling and posterior inference using Stan and R.
-      </p>
+        <p>
+          Hierarchical Bayesian modelling and posterior inference using Stan and R.
+        </p>
 
-      <div class="tags">
-        <span class="tag">Bayesian</span>
-        <span class="tag">Stan</span>
-        <span class="tag">MCMC</span>
+        <div class="tags">
+          <span class="tag">Bayesian</span>
+          <span class="tag">Stan</span>
+          <span class="tag">MCMC</span>
+        </div>
       </div>
-    </div>
 
-    <!-- PROJECT 3 -->
-    <div class="project-card">
-      <h3>Survival Analysis</h3>
+      <!-- PROJECT 3 -->
+      <div class="project-card">
+        <h3>Survival Analysis</h3>
 
-      <p>
-        Time-to-event modelling for clinical trial endpoints and hazard estimation.
-      </p>
+        <p>
+          Time-to-event modelling for clinical trial endpoints and hazard estimation.
+        </p>
 
-      <div class="tags">
-        <span class="tag">Survival</span>
-        <span class="tag">Cox Model</span>
-        <span class="tag">Clinical Trials</span>
+        <div class="tags">
+          <span class="tag">Survival</span>
+          <span class="tag">Cox Model</span>
+          <span class="tag">Clinical Trials</span>
+        </div>
       </div>
-    </div>
 
-    <!-- PROJECT 4 -->
-    <div class="project-card">
-      <h3>Network Meta-Analysis</h3>
+      <!-- PROJECT 4 -->
+      <div class="project-card">
+        <h3>Network Meta-Analysis</h3>
 
-      <p>
-        Evidence synthesis using ML-NMR, MAIC, STC and indirect treatment comparisons.
-      </p>
+        <p>
+          Evidence synthesis using ML-NMR, MAIC, STC and indirect treatment comparisons.
+        </p>
 
-      <div class="tags">
-        <span class="tag">HTA</span>
-        <span class="tag">NMA</span>
-        <span class="tag">MAIC</span>
-        <span class="tag">Evidence Synthesis</span>
+        <div class="tags">
+          <span class="tag">HTA</span>
+          <span class="tag">NMA</span>
+          <span class="tag">MAIC</span>
+          <span class="tag">Evidence Synthesis</span>
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
-</div>
-      
 
+</div>
+
+<!-- DARK MODE SCRIPT (IMPORTANT - MUST BE BEFORE </body>) -->
+<script>
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
 
 
     
