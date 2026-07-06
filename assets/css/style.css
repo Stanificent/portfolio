@@ -65,6 +65,12 @@ body {
   color: var(--accent);
 }
 
+.navbar button {
+  margin-left: 15px;
+  border: none;
+  cursor: pointer;
+}
+
 /* HERO */
 .hero {
   padding: 80px 0 40px;
