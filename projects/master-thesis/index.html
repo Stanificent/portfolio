@@ -2,153 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Federated Synthetic Data Analysis | Master’s Thesis</title>
+  <title>Federated Synthetic Data Analysis</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 40px;
-      line-height: 1.6;
-      color: #222;
-    }
-
-    h1, h2, h3 {
-      color: #111;
-    }
-
-    .meta {
-      color: #555;
-      margin-bottom: 20px;
-    }
-
-    .section {
-      margin-top: 30px;
-    }
-
-    .box {
-      border-left: 4px solid #0b57d0;
-      padding-left: 15px;
-      margin: 15px 0;
-    }
-
-    ul {
-      margin-top: 10px;
-    }
-
-    a {
-      color: #0b57d0;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body>
 
-  <h1>Federated Synthetic Data Analysis Using synthpop</h1>
+<div class="container">
 
-  <div class="meta">
-    Master’s Thesis Project | Biostatistics | Simulation Study | Privacy-Preserving Methods
-  </div>
-
-  <hr>
-
-  <div class="section">
-    <h2>1. Abstract</h2>
-    <p>
-      This project investigates the utility of synthetic longitudinal data generated using the
-      <i>synthpop</i> framework, with a focus on privacy-preserving statistical analysis in
-      multi-site biomedical studies. The study evaluates whether synthetic data can reproduce
-      inferential validity comparable to original data in mixed-effects modeling settings.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>2. Objective</h2>
-    <div class="box">
-      To evaluate the statistical validity, utility, and variability of synthetic longitudinal data
-      generated under a federated-like framework, compared to original clinical data.
+  <!-- NAV -->
+  <div class="navbar">
+    <div><strong>Stanley Okafor</strong></div>
+    <div>
+      <a href="../../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../../assets/documents/Stanley_Okafor_CV.pdf">CV</a>
     </div>
   </div>
 
+  <!-- TITLE -->
+  <div class="hero">
+    <h1>Federated Synthetic Data Analysis</h1>
+    <div class="subtitle">
+      Privacy-preserving mixed-effects modelling using synthetic healthcare data
+    </div>
+    <p>
+      Master’s Thesis • University of Bremen • R • Stan • Simulation Study
+    </p>
+
+    <a class="button" href="../../assets/documents/Stanley_Okafor_CV.pdf">Download Thesis PDF</a>
+    <a class="button" href="https://github.com/">GitHub Repo</a>
+  </div>
+
+  <!-- OVERVIEW -->
   <div class="section">
-    <h2>3. Methods</h2>
+    <h2>Overview</h2>
+    <p>
+      This study investigates federated synthetic data analysis as a privacy-preserving approach
+      for statistical modelling in multi-site healthcare research.
+    </p>
+  </div>
 
-    <h3>3.1 Data Generation</h3>
-    <ul>
-      <li>Synthetic data generated using <b>synthpop</b></li>
-      <li>Multi-site longitudinal structure</li>
-      <li>Random intercept mixed-effects framework</li>
-    </ul>
+  <!-- PROBLEM -->
+  <div class="section">
+    <h2>Problem Statement</h2>
+    <p>
+      Healthcare data sharing is often restricted due to privacy regulations.
+      Traditional pooled analysis may not be feasible across institutions.
+      This thesis explores synthetic data generation combined with federated modelling
+      as an alternative approach.
+    </p>
+  </div>
 
-    <h3>3.2 Simulation Design</h3>
+  <!-- OBJECTIVES -->
+  <div class="section">
+    <h2>Research Objectives</h2>
     <ul>
-      <li>Repeated simulation studies (Monte Carlo framework)</li>
-      <li>Comparison of synthetic vs original datasets</li>
-      <li>Fixed and random effects evaluated</li>
-    </ul>
-
-    <h3>3.3 Models</h3>
-    <ul>
-      <li>Linear mixed-effects models</li>
-      <li>Random intercept models across sites</li>
-      <li>Parameter estimation under repeated sampling</li>
+      <li>Evaluate bias and variance of federated synthetic data models</li>
+      <li>Assess statistical utility across multiple simulated sites</li>
+      <li>Compare performance under varying sample sizes</li>
+      <li>Quantify disclosure risk vs analytical validity</li>
     </ul>
   </div>
 
+  <!-- METHODS -->
   <div class="section">
-    <h2>4. Performance Measures</h2>
+    <h2>Methodology</h2>
+    <p>
+      A Monte Carlo simulation framework was implemented using mixed-effects models.
+      Data were generated across multiple sites with heterogeneity in covariate distributions.
+      Synthetic datasets were created using the <em>synthpop</em> framework.
+    </p>
+
+    <p>
+      A hierarchical mixed-effects model was then fitted:
+    </p>
+
+    <pre>
+Y_ij = β0 + β1 X_ij + u_j + ε_ij
+
+u_j ~ N(0, σ²_site)
+ε_ij ~ N(0, σ²)
+    </pre>
+  </div>
+
+  <!-- WORKFLOW -->
+  <div class="section">
+    <h2>Analysis Workflow</h2>
+
+    <pre>
+Original Data
+     ↓
+Site-level Splitting
+     ↓
+Synthetic Data Generation
+     ↓
+Mixed-Effects Model Fitting
+     ↓
+Pooling of Estimates
+     ↓
+Performance Evaluation
+(Bias | Variance | MSE | Coverage | Utility)
+    </pre>
+  </div>
+
+  <!-- RESULTS -->
+  <div class="section">
+    <h2>Key Results</h2>
     <ul>
-      <li>Bias</li>
-      <li>Variance</li>
-      <li>Mean Squared Error (MSE)</li>
-      <li>Coverage Probability</li>
+      <li>Low bias observed in fixed effects across scenarios</li>
+      <li>Variance increased with higher heterogeneity between sites</li>
+      <li>Coverage remained stable under moderate sample sizes</li>
+      <li>Trade-off identified between privacy and statistical utility</li>
     </ul>
   </div>
 
+  <!-- CONTRIBUTIONS -->
   <div class="section">
-    <h2>5. Key Contributions</h2>
+    <h2>Key Contributions</h2>
     <ul>
-      <li>Evaluation of synthetic data utility in longitudinal settings</li>
-      <li>Assessment of privacy-preserving modeling approaches</li>
-      <li>Comparison of synthetic vs original inference stability</li>
+      <li>Designed a scalable Monte Carlo simulation framework</li>
+      <li>Implemented federated synthetic data pipeline in R</li>
+      <li>Evaluated mixed-effects models under privacy constraints</li>
+      <li>Compared utility vs disclosure risk trade-offs</li>
     </ul>
   </div>
 
+  <!-- LIMITATIONS -->
   <div class="section">
-    <h2>6. Technical Skills Demonstrated</h2>
+    <h2>Limitations</h2>
     <ul>
-      <li>R programming</li>
-      <li>Mixed-effects modeling</li>
-      <li>Simulation studies (Monte Carlo)</li>
-      <li>Statistical inference</li>
-      <li>synthpop framework</li>
-      <li>Data synthesis and evaluation</li>
+      <li>Simplified assumption of linear mixed-effects structure</li>
+      <li>No longitudinal dependency structure included</li>
+      <li>Limited real-world validation beyond simulation</li>
     </ul>
   </div>
 
+  <!-- DOWNLOADS -->
   <div class="section">
-    <h2>7. Outputs</h2>
-    <ul>
-      <li>Simulation results (bias, variance, MSE)</li>
-      <li>Model comparison summaries</li>
-      <li>Figures and diagnostic plots (to be added)</li>
-    </ul>
+    <h2>Resources</h2>
+    <p>
+      <a href="../../assets/documents/Stanley_Okafor_Thesis.pdf">📄 Full Thesis PDF</a><br>
+      <a href="#">📊 Presentation Slides</a><br>
+      <a href="#">💻 GitHub Repository</a>
+    </p>
   </div>
 
-  <div class="section">
-    <h2>8. Links</h2>
-    <ul>
-      <li><a href="https://github.com/stanificent">GitHub Profile</a></li>
-      <li><a href="../index.html">Back to Portfolio</a></li>
-    </ul>
-  </div>
+</div>
 
 </body>
 </html>
