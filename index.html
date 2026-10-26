@@ -1,245 +1,319 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Stanley Okafor | Biostatistics Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Stanley Okafor's biostatistics portfolio showcasing statistical programming, Bayesian modelling, clinical research, simulation studies, and evidence synthesis.">
-<meta name="author" content="Stanley Okafor">
+
+  <title>Stanley Okafor | Biostatistics Portfolio</title>
+
+  <meta
+    name="description"
+    content="Stanley Okafor's biostatistics portfolio showcasing statistical programming, Bayesian modelling, clinical research, simulation studies, and evidence synthesis."
+  >
+  <meta name="author" content="Stanley Okafor">
 
   <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- (you can remove this inline style later if you want full CSS control) -->
-
 </head>
 
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <!-- NAVBAR -->
-  <div class="navbar">
-    <div><strong>Stanley Okafor</strong></div>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div>
+        <strong>Stanley Okafor</strong>
+      </div>
 
-    <div>
-      <a href="index.html">Home</a>
-      <a href="pages/projects.html">Projects</a>
-      <a href="pages/skills.html">Methods</a>
-      <a href="projects/master-thesis/index.html">Thesis</a>
-      <a href="pages/cv.html">CV</a>
-      <a href="https://github.com/stanificent" target="_blank">GitHub</a>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="pages/projects.html">Projects</a>
+        <a href="pages/skills.html">Methods</a>
+        <a href="projects/master-thesis/index.html">Thesis</a>
+        <a href="pages/cv.html">CV</a>
 
-      <button onclick="toggleDarkMode()" class="button">Dark Mode</button>
+        <a
+          href="https://github.com/stanificent"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub</a>
+
+        <button
+          type="button"
+          onclick="toggleDarkMode()"
+          class="button"
+          aria-label="Toggle dark mode"
+        >
+          Dark Mode
+        </button>
+      </div>
     </div>
+
+    <!-- HERO -->
+    <div class="hero">
+      <h1>Stanley Okafor</h1>
+
+      <div class="subtitle">
+        Biostatistician | Statistical Programmer
+      </div>
+
+      <p>
+        Developing robust statistical methods for clinical research,
+        Bayesian modelling, evidence synthesis, causal inference, and
+        privacy-preserving healthcare analytics. Passionate about improving
+        healthcare decision-making through reproducible and transparent
+        statistical science.
+      </p>
+
+      <a class="button" href="pages/projects.html">
+        View Projects
+      </a>
+
+      <a
+        class="button"
+        href="assets/documents/Stanley_Okafor_CV.pdf"
+      >
+        Download CV
+      </a>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="section">
+      <h2>About</h2>
+
+      <p>
+        I am a biostatistician with expertise in statistical modelling,
+        simulation studies, Bayesian methods, survival analysis, and evidence
+        synthesis for healthcare research. My work focuses on developing
+        reproducible analytical workflows, evaluating statistical methodology,
+        and supporting evidence-based decision-making in clinical research
+        and Health Technology Assessment (HTA). I enjoy applying modern
+        statistical techniques to solve complex biomedical problems while
+        promoting transparent and reproducible research.
+      </p>
+    </div>
+
+    <!-- AREAS OF EXPERTISE -->
+    <div class="section">
+      <h2>Areas of Expertise</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>📊 Clinical Trial Statistics</h3>
+          <p>
+            Longitudinal analysis, mixed-effects models, survival analysis,
+            and clinical trial methodology.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>🧬 Bayesian Statistics</h3>
+          <p>
+            Hierarchical models, posterior inference, MCMC, and Bayesian
+            computation using Stan.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>📈 Simulation Studies</h3>
+          <p>
+            Monte Carlo simulation, synthetic healthcare data, and
+            statistical performance evaluation.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>🔗 Evidence Synthesis</h3>
+          <p>
+            Network meta-analysis, MAIC, STC, ML-NMR, and Health Technology
+            Assessment.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>💻 Statistical Programming</h3>
+          <p>
+            R, Stan, SAS, Git, Quarto, and reproducible analytical workflows.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FEATURED PROJECTS -->
+    <div class="section">
+      <h2>Featured Projects</h2>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+          <h3>
+            <a href="projects/master-thesis/index.html">
+              Federated Synthetic Data Analysis
+            </a>
+          </h3>
+
+          <p>
+            A simulation study investigating privacy-preserving mixed-effects
+            models for healthcare data synthesis.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Simulation</span>
+            <span class="tag">Mixed Models</span>
+            <span class="tag">Privacy</span>
+            <span class="tag">R</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+          <h3>Bayesian Mixed Models</h3>
+
+          <p>
+            Hierarchical Bayesian modelling and posterior inference using
+            Stan and R.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Bayesian</span>
+            <span class="tag">Stan</span>
+            <span class="tag">MCMC</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+          <h3>Survival Analysis</h3>
+
+          <p>
+            Time-to-event modelling for clinical trial endpoints and
+            hazard estimation.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Survival</span>
+            <span class="tag">Cox Model</span>
+            <span class="tag">Clinical Trials</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card">
+          <h3>Network Meta-Analysis</h3>
+
+          <p>
+            Evidence synthesis using ML-NMR, MAIC, STC, and indirect
+            treatment comparisons.
+          </p>
+
+          <div class="tags">
+            <span class="tag">HTA</span>
+            <span class="tag">NMA</span>
+            <span class="tag">MAIC</span>
+            <span class="tag">Evidence Synthesis</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RESEARCH INTERESTS -->
+    <div class="section">
+      <h2>Research Interests</h2>
+
+      <div class="tags">
+        <span class="tag">Bayesian Statistics</span>
+        <span class="tag">Clinical Trials</span>
+        <span class="tag">Mixed Models</span>
+        <span class="tag">Survival Analysis</span>
+        <span class="tag">Synthetic Data</span>
+        <span class="tag">Evidence Synthesis</span>
+        <span class="tag">HTA</span>
+        <span class="tag">Statistical Programming</span>
+      </div>
+    </div>
+
+    <!-- CURRENT FOCUS -->
+    <div class="section">
+      <h2>Current Focus</h2>
+
+      <ul>
+        <li>
+          Completing MSc research on Federated Synthetic Data Analysis.
+        </li>
+        <li>
+          Developing reproducible statistical workflows in R and Stan.
+        </li>
+        <li>
+          Expanding expertise in Bayesian modelling and Health Technology
+          Assessment.
+        </li>
+        <li>
+          Building a professional portfolio showcasing applied statistical
+          methodology.
+        </li>
+      </ul>
+    </div>
+
   </div>
+  <!-- END MAIN CONTAINER -->
 
-  <!-- HERO -->
-  <div class="hero">
-    <h1>Stanley Okafor</h1>
+  <!-- FOOTER -->
+  <footer>
+    <h3>Stanley Okafor</h3>
 
-    <div class="subtitle">
+    <p>
       Biostatistician | Statistical Programmer
+    </p>
+
+    <div class="footer-links">
+      <a href="mailto:okafor.stanley.so@gmail.com">Email</a>
+
+      <a
+        href="https://github.com/stanificent"
+        target="_blank"
+        rel="noopener noreferrer"
+      >GitHub</a>
+
+      <a href="pages/cv.html">CV</a>
     </div>
 
     <p>
-      Developing robust statistical methods for clinical research, Bayesian modelling, evidence synthesis, causal inference,
-      and privacy-preserving healthcare analytics. Passionate about improving healthcare decision-making through reproducible and 
-      transparent statistical science. 
+      © 2026 Stanley Okafor. All rights reserved.
     </p>
+  </footer>
 
-    <a class="button" href="pages/projects.html">View Projects</a>
-    <a class="button" href="assets/documents/Stanley_Okafor_CV.pdf">Download CV</a>
-  </div>
-
-  <!-- ABOUT -->
-  <div class="section">
-    <h2>About</h2>
-    <p>
-      I am a biostatistician with expertise in statistical modelling, simulation studies, Bayesian methods, survival analysis and evidence
-      synthesis for healthcare research. My work focuses on developing reproducible analytical workflows, evaluating statistical methodology,
-      supporting evidence based decision making in clinical research and Health Technology Assessment (HTA). I enjoy applying modern statistical
-      techniques to solve complex biomedical problems while promoting transparent and reproducible research.
-    </p>
-  </div>
-  <div class="section">
-  <h2>Areas of Expertise</h2>
-
-  <div class="projects-grid">
-
-    <div class="project-card">
-      <h3>📊 Clinical Trial Statistics</h3>
-      <p>Longitudinal analysis, mixed-effects models, survival analysis, and clinical trial methodology.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>🧬 Bayesian Statistics</h3>
-      <p>Hierarchical models, posterior inference, MCMC, and Bayesian computation using Stan.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>📈 Simulation Studies</h3>
-      <p>Monte Carlo simulation, synthetic healthcare data, and statistical performance evaluation.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>🔗 Evidence Synthesis</h3>
-      <p>Network meta-analysis, MAIC, STC, ML-NMR, and Health Technology Assessment.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>💻 Statistical Programming</h3>
-      <p>R, Stan, SAS, Git, Quarto, and reproducible analytical workflows.</p>
-    </div>
-
-  </div>
-</div>
-
-  <!-- PROJECTS -->
-  <div class="section">
-    <h2>Featured Projects</h2>
-
-    <div class="projects-grid">
-
-      <!-- PROJECT 1 -->
-      <div class="project-card">
-        <h3>
-          <a href="projects/master-thesis/index.html">
-            Federated Synthetic Data Analysis
-          </a>
-        </h3>
-
-        <p>
-          Large-scale simulation study on privacy-preserving mixed-effects models for healthcare data synthesis.
-        </p>
-
-        <div class="tags">
-          <span class="tag">Simulation</span>
-          <span class="tag">Mixed Models</span>
-          <span class="tag">Privacy</span>
-          <span class="tag">R</span>
-        </div>
-      </div>
-
-      <!-- PROJECT 2 -->
-      <div class="project-card">
-        <h3>Bayesian Mixed Models</h3>
-
-        <p>
-          Hierarchical Bayesian modelling and posterior inference using Stan and R.
-        </p>
-
-        <div class="tags">
-          <span class="tag">Bayesian</span>
-          <span class="tag">Stan</span>
-          <span class="tag">MCMC</span>
-        </div>
-      </div>
-
-      <!-- PROJECT 3 -->
-      <div class="project-card">
-        <h3>Survival Analysis</h3>
-
-        <p>
-          Time-to-event modelling for clinical trial endpoints and hazard estimation.
-        </p>
-
-        <div class="tags">
-          <span class="tag">Survival</span>
-          <span class="tag">Cox Model</span>
-          <span class="tag">Clinical Trials</span>
-        </div>
-      </div>
-
-      <!-- PROJECT 4 -->
-      <div class="project-card">
-        <h3>Network Meta-Analysis</h3>
-
-        <p>
-          Evidence synthesis using ML-NMR, MAIC, STC and indirect treatment comparisons.
-        </p>
-
-        <div class="tags">
-          <span class="tag">HTA</span>
-          <span class="tag">NMA</span>
-          <span class="tag">MAIC</span>
-          <span class="tag">Evidence Synthesis</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- RESEARCH INTERESTS -->
-  <div class="section">
-    <h2>Research Interests</h2>
-
-  <div class="tags">
-
-    <span class="tag">Bayesian Statistics</span>
-    <span class="tag">Clinical Trials</span>
-    <span class="tag">Mixed Models</span>
-    <span class="tag">Survival Analysis</span>
-    <span class="tag">Synthetic Data</span>
-    <span class="tag">Evidence Synthesis</span>
-    <span class="tag">HTA</span>
-    <span class="tag">Statistical Programming</span>
-
-  </div>
-</div>
-<div class="section">
-
-  <h2>Current Focus</h2>
-
-  <ul>
-
-    <li>Completing MSc research on Federated Synthetic Data Analysis.</li>
-
-    <li>Developing reproducible statistical workflows in R and Stan.</li>
-
-    <li>Expanding expertise in Bayesian modelling and Health Technology Assessment.</li>
-
-    <li>Building a professional portfolio showcasing applied statistical methodology.</li>
-
-  </ul>
-
-</div>
-</div>
-  <!-- End Current Focus -->
-
-</div>
-<!-- End main container -->
-
-<footer>
-<footer>
-
-  <h3>Stanley Okafor</h3>
-
-  <p>
-    Biostatistician | Statistical Programmer
-  </p>
-
-  <div class="footer-links">
-    <a href="mailto:okafor.stanley.so@gmail.com">Email</a>
-    <a href="https://github.com/stanificent"
-   target="_blank"
-   rel="noopener noreferrer">GitHub</a>
-    <a href="pages/cv.html">CV</a>
-  </div>
-
-  <p>
-    © 2026 Stanley Okafor. All rights reserved.
-  </p>
-
-</footer> 
-<!-- DARK MODE SCRIPT (IMPORTANT - MUST BE BEFORE </body>) -->
-<script>
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
-}
-</script>
+  <!-- DARK MODE SCRIPT -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 
 </body>
 </html>
+
+
+  
+
+    
+  
+
+  
+         
+
+      
+       
+
+        
+
+
+
+
 
 
     
