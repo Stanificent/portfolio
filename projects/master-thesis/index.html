@@ -1,106 +1,160 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Federated Synthetic Data Analysis</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Federated Synthetic Data Analysis | Stanley Okafor</title>
+
+  <meta
+    name="description"
+    content="Master's thesis portfolio page exploring federated synthetic data analysis, privacy-preserving healthcare research, mixed-effects models, and simulation studies."
+  >
+  <meta name="author" content="Stanley Okafor">
+
   <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <!-- NAV -->
-  <div class="navbar">
-    <div><strong>Stanley Okafor</strong></div>
-    <div>
-      <a href="../../index.html">Home</a>
-      <a href="../../pages/projects.html">Projects</a>
-      <a href="../../assets/documents/Stanley_Okafor_CV.pdf">CV</a>
-      <button onclick="toggleDarkMode()" class="button">Dark Mode</button>
-    </div>
-  </div>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div>
+        <strong>Stanley Okafor</strong>
+      </div>
 
-  <!-- TITLE -->
-  <div class="hero">
-    <h1>Federated Synthetic Data Analysis</h1>
-    <div class="subtitle">
-      Privacy-preserving mixed-effects modelling using synthetic healthcare data
-    </div>
-    <p>
-      Master’s Thesis • University of Bremen • R • Stan • Simulation Study
-    </p>
+      <div>
+        <a href="../../index.html">Home</a>
+        <a href="../../pages/projects.html">Projects</a>
+        <a href="../../pages/skills.html">Methods</a>
+        <a href="../../pages/cv.html">CV</a>
 
-    <a class="button" href="../../assets/documents/Stanley_Okafor_CV.pdf">Download Thesis PDF</a>
-    <a class="button" href="https://github.com/">GitHub Repo</a>
-  </div>
+        <a
+          href="https://github.com/stanificent"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub</a>
 
-  <!-- OVERVIEW -->
-  <div class="section">
-    <h2>Overview</h2>
-    <p>
-      This study investigates federated synthetic data analysis as a privacy-preserving approach
-      for statistical modelling in multi-site healthcare research.
-    </p>
-  </div>
+        <button
+          type="button"
+          class="button"
+          onclick="toggleDarkMode()"
+        >
+          Dark Mode
+        </button>
+      </div>
+    </nav>
 
-  <!-- PROBLEM -->
-  <div class="section">
-    <h2>Problem Statement</h2>
-    <p>
-      Healthcare data sharing is often restricted due to privacy regulations.
-      Traditional pooled analysis may not be feasible across institutions.
-      This thesis explores synthetic data generation combined with federated modelling
-      as an alternative approach.
-    </p>
-  </div>
+    <!-- HERO -->
+    <header class="hero">
+      <h1>Federated Synthetic Data Analysis</h1>
 
-  <!-- OBJECTIVES -->
-  <div class="section">
-    <h2>Research Objectives</h2>
-    <ul>
-      <li>Evaluate bias and variance of federated synthetic data models</li>
-      <li>Assess statistical utility across multiple simulated sites</li>
-      <li>Compare performance under varying sample sizes</li>
-      <li>Quantify disclosure risk vs analytical validity</li>
-    </ul>
-  </div>
+      <div class="subtitle">
+        Privacy-preserving mixed-effects modelling using synthetic healthcare data
+      </div>
 
-  <!-- METHODS -->
-  <div class="section">
-    <h2>Methodology</h2>
-    <p>
-      A Monte Carlo simulation framework was implemented using mixed-effects models.
-      Data were generated across multiple sites with heterogeneity in covariate distributions.
-      Synthetic datasets were created using the <em>synthpop</em> framework.
-    </p>
+      <p>
+        Master's Thesis | University of Bremen | R | Stan | Simulation Study
+      </p>
 
-    <p>
-      A hierarchical mixed-effects model was then fitted:
-    </p>
+      <a class="button" href="#overview">
+        Explore the Research
+      </a>
 
-    <pre>
-Y_ij = β0 + β1 X_ij + u_j + ε_ij
+      <a
+        class="button"
+        href="../../pages/cv.html"
+      >
+        View CV
+      </a>
+    </header>
+
+    <!-- OVERVIEW -->
+    <section class="section" id="overview">
+      <h2>Overview</h2>
+
+      <p>
+        This study investigates federated synthetic data analysis as a
+        privacy-preserving approach to statistical modelling in multi-site
+        healthcare research.
+      </p>
+    </section>
+
+    <!-- PROBLEM STATEMENT -->
+    <section class="section">
+      <h2>Problem Statement</h2>
+
+      <p>
+        Healthcare data sharing can be restricted by privacy regulations
+        and institutional governance requirements. Traditional pooled
+        analysis may not be feasible across institutions. This thesis
+        explores synthetic data generation combined with federated
+        modelling as a potential alternative.
+      </p>
+    </section>
+
+    <!-- RESEARCH OBJECTIVES -->
+    <section class="section">
+      <h2>Research Objectives</h2>
+
+      <ul>
+        <li>Evaluate bias and variance of federated synthetic data models.</li>
+        <li>Assess statistical utility across multiple simulated sites.</li>
+        <li>Compare performance under varying sample sizes.</li>
+        <li>Investigate the trade-off between disclosure risk and analytical validity.</li>
+      </ul>
+    </section>
+
+    <!-- METHODOLOGY -->
+    <section class="section">
+      <h2>Methodology</h2>
+
+      <p>
+        A Monte Carlo simulation framework was implemented using
+        mixed-effects models. Data were generated across multiple sites
+        with heterogeneity in covariate distributions. Synthetic datasets
+        were created using the <em>synthpop</em> framework.
+      </p>
+
+      <p>A hierarchical mixed-effects model was considered:</p>
+
+      <pre><code>Y_ij = β0 + β1 X_ij + u_j + ε_ij
 
 u_j ~ N(0, σ²_site)
-ε_ij ~ N(0, σ²)
-    </pre>
-  </div>
+ε_ij ~ N(0, σ²)</code></pre>
 
-  <div class="section">
-  <h2>Simulation Design</h2>
+      <p>
+        The model and simulation description should be checked against
+        the final thesis to ensure that the displayed equations accurately
+        represent the implemented analysis.
+      </p>
+    </section>
 
-  <img src="../../assets/images/master-thesis/simulation_design.png"
-       style="width:100%; border-radius:10px; margin-top:10px;">
-</div>
+    <!-- SIMULATION DESIGN -->
+    <section class="section">
+      <h2>Simulation Design</h2>
 
-  <!-- WORKFLOW -->
-  <div class="section">
-    <h2>Analysis Workflow</h2>
+      <p>
+        This section presents the design used to evaluate model performance
+        across the simulation scenarios.
+      </p>
 
-    <pre>
-Original Data
+      <img
+        src="../../assets/images/master-thesis/simulation_design.png"
+        alt="Simulation design diagram for the federated synthetic data analysis study"
+        style="width: 100%; height: auto; border-radius: 10px; margin-top: 10px;"
+        loading="lazy"
+      >
+    </section>
+
+    <!-- WORKFLOW -->
+    <section class="section">
+      <h2>Analysis Workflow</h2>
+
+      <pre><code>Original Data
      ↓
 Site-level Splitting
      ↓
@@ -111,142 +165,169 @@ Mixed-Effects Model Fitting
 Pooling of Estimates
      ↓
 Performance Evaluation
-(Bias | Variance | MSE | Coverage | Utility)
-    </pre>
+(Bias | Variance | MSE | Coverage | Utility)</code></pre>
+
+      <h3>Federated Synthetic Data Analysis Workflow</h3>
+
+      <img
+        src="../../assets/images/master-thesis/fsda-diagram.png"
+        alt="Workflow diagram illustrating the federated synthetic data analysis process"
+        style="width: 100%; height: auto; border-radius: 10px; margin-top: 10px;"
+        loading="lazy"
+      >
+    </section>
+
+    <!-- RESULTS -->
+    <section class="section">
+      <h2>Key Results</h2>
+
+      <ul>
+        <li>Low bias was reported for fixed effects in the evaluated scenarios.</li>
+        <li>Variance increased with greater heterogeneity between sites.</li>
+        <li>Coverage was reported as stable under moderate sample sizes.</li>
+        <li>A trade-off between privacy and statistical utility was investigated.</li>
+      </ul>
+
+      <p>
+        The findings and their interpretation should be verified against
+        the final simulation outputs before publication on this website.
+      </p>
+    </section>
+
+    <!-- RESULTS FIGURES -->
+    <section class="section">
+      <h2>Simulation Results</h2>
+
+      <h3>Bias Comparison</h3>
+      <img
+        src="../../assets/images/master-thesis/bias_comparison.png"
+        alt="Plot comparing estimation bias across simulation scenarios"
+        style="width: 100%; height: auto; border-radius: 10px; margin-top: 10px;"
+        loading="lazy"
+      >
+
+      <h3>Variance Comparison</h3>
+      <img
+        src="../../assets/images/master-thesis/variance_comparison.png"
+        alt="Plot comparing variance across simulation scenarios"
+        style="width: 100%; height: auto; border-radius: 10px; margin-top: 20px;"
+        loading="lazy"
+      >
+
+      <h3>Mean Squared Error Comparison</h3>
+      <img
+        src="../../assets/images/master-thesis/mse_comparison.png"
+        alt="Plot comparing mean squared error across simulation scenarios"
+        style="width: 100%; height: auto; border-radius: 10px; margin-top: 20px;"
+        loading="lazy"
+      >
+    </section>
+
+    <!-- CONTRIBUTIONS -->
+    <section class="section">
+      <h2>Key Contributions</h2>
+
+      <ul>
+        <li>Designed a Monte Carlo simulation framework.</li>
+        <li>Implemented a synthetic data analysis pipeline in R.</li>
+        <li>Evaluated mixed-effects models under privacy constraints.</li>
+        <li>Investigated analytical utility and disclosure-risk trade-offs.</li>
+      </ul>
+    </section>
+
+    <!-- LIMITATIONS -->
+    <section class="section">
+      <h2>Limitations</h2>
+
+      <ul>
+        <li>Simplified assumptions about the linear mixed-effects structure.</li>
+        <li>Longitudinal dependency structures were not included, if consistent with the final study.</li>
+        <li>Limited real-world validation beyond simulation.</li>
+      </ul>
+    </section>
+
+    <!-- RESOURCES -->
+    <section class="section" id="resources">
+      <h2>Research Resources</h2>
+
+      <p>
+        The full thesis and presentation links will be added after the
+        corresponding PDF files have been confirmed in the repository.
+      </p>
+
+      <p>
+        <a
+          class="button"
+          href="../../pages/cv.html"
+        >
+          View CV
+        </a>
+
+        <a
+          class="button"
+          href="https://github.com/stanificent"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub Profile
+        </a>
+      </p>
+    </section>
+
   </div>
+  <!-- END MAIN CONTAINER -->
 
-  <div class="section">
-  <h2>Federated Synthetic Data Analysis Workflow</h2>
+  <!-- FOOTER -->
+  <footer>
+    <h3>Stanley Okafor</h3>
 
-  <img src="../../assets/images/master-thesis/fsda-diagram.png"
-       style="width:100%; border-radius:10px; margin-top:10px;">
-</div>
+    <p>Biostatistician | Statistical Programmer</p>
 
-  <!-- RESULTS -->
-  <div class="section">
-    <h2>Key Results</h2>
-    <ul>
-      <li>Low bias observed in fixed effects across scenarios</li>
-      <li>Variance increased with higher heterogeneity between sites</li>
-      <li>Coverage remained stable under moderate sample sizes</li>
-      <li>Trade-off identified between privacy and statistical utility</li>
-    </ul>
-  </div>
+    <div class="footer-links">
+      <a href="mailto:okafor.stanley.so@gmail.com">Email</a>
 
-  <div class="section">
-  <h2>Key Results</h2>
+      <a
+        href="https://github.com/stanificent"
+        target="_blank"
+        rel="noopener noreferrer"
+      >GitHub</a>
 
-  <img src="../../assets/images/master-thesis/bias_comparison.png"
-       style="width:100%; border-radius:10px; margin-top:10px;">
+      <a href="../../pages/cv.html">CV</a>
+      <a href="../../index.html">Home</a>
+    </div>
 
-  <img src="../../assets/images/master-thesis/variance_comparison.png"
-       style="width:100%; border-radius:10px; margin-top:20px;">
-    
-  <img src="../../assets/images/master-thesis/mse_comparison.png"
-       style="width:100%; border-radius:10px; margin-top:20px;">
-</div>
+    <p>© 2026 Stanley Okafor. All rights reserved.</p>
+  </footer>
 
-  <!-- CONTRIBUTIONS -->
-  <div class="section">
-    <h2>Key Contributions</h2>
-    <ul>
-      <li>Designed a scalable Monte Carlo simulation framework</li>
-      <li>Implemented federated synthetic data pipeline in R</li>
-      <li>Evaluated mixed-effects models under privacy constraints</li>
-      <li>Compared utility vs disclosure risk trade-offs</li>
-    </ul>
-  </div>
+  <!-- DARK MODE -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 
-  <!-- LIMITATIONS -->
-  <div class="section">
-    <h2>Limitations</h2>
-    <ul>
-      <li>Simplified assumption of linear mixed-effects structure</li>
-      <li>No longitudinal dependency structure included</li>
-      <li>Limited real-world validation beyond simulation</li>
-    </ul>
-  </div>
-
-  <!-- DOWNLOADS -->
-  <div class="section">
-    <h2>Resources</h2>
-    <p>
-      <a href="../../assets/documents/Stanley_Okafor_Thesis.pdf">📄 Full Thesis PDF</a><br>
-      <a href="#">📊 Presentation Slides</a><br>
-      <a href="#">💻 GitHub Repository</a>
-    </p>
-  </div>
-
-</div>
-
-  <div class="section">
-  <h2>Downloads</h2>
-
-  <a class="button" href="../../assets/documents/master_thesis.pdf">
-    📄 Download Thesis PDF
-  </a>
-
-  <a class="button" href="../../assets/documents/thesis_slides.pdf">
-    📊 Download Slides
-  </a>
-
-  <a class="button" href="../../assets/documents/Stanley_Okafor_CV.pdf">
-    📑 Download CV
-  </a>
-</div>
-
-  <div class="section">
-  <h2>Resources</h2>
-
-  <a class="button"
-     href="../../assets/documents/master_thesis.pdf"
-     target="_blank">
-     📄 View Thesis
-  </a>
-
-  <a class="button"
-     href="../../assets/documents/master_thesis.pdf"
-     download>
-     ⬇ Download Thesis
-  </a>
-
-  <a class="button"
-     href="../../assets/documents/thesis_slides.pdf"
-     target="_blank">
-     📊 Presentation Slides
-  </a>
-
-  <a class="button"
-     href="../../assets/documents/Stanley_Okafor_CV.pdf"
-     target="_blank">
-     📑 CV
-  </a>
-
-  <a class="button"
-     href="https://github.com/stanificent"
-     target="_blank">
-     💻 GitHub Repository
-  </a>
-
-</div>
-<footer>
-
-  <h3>Stanley Okafor</h3>
-
-  <p>
-    Biostatistician | Statistical Programmer
-  </p>
-
-  <div class="footer-links">
-    <a href="mailto:okafor.stanley.so@gmail.com">Email</a>
-    <a href="https://github.com/stanificent" target="_blank">GitHub</a>
-    <a href="../../pages/cv.html">CV</a>
-  </div>
-
-  <p>
-    © 2026 Stanley Okafor. All rights reserved.
-  </p>
-
-</footer>
 </body>
 </html>
+
+    
+   
+
+
+ 
+  
+ 
+
+
+ 
+
+ 
+ 
+      
+
+
+  
+  
+     
+
+
+  
