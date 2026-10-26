@@ -372,6 +372,71 @@ body.dark-mode .footer-links a:hover {
 }
 
 
+/* ---------- DARK MODE READABILITY FIX ---------- */
+
+body.dark-mode {
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode label,
+body.dark-mode figcaption,
+body.dark-mode strong,
+body.dark-mode em,
+body.dark-mode .subtitle {
+  color: #f1f5f9 !important;
+}
+
+body.dark-mode .container,
+body.dark-mode .section,
+body.dark-mode .hero {
+  background-color: transparent;
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer {
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
+}
+
+body.dark-mode .project-card,
+body.dark-mode .card,
+body.dark-mode .project-outcomes {
+  background-color: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #475569 !important;
+}
+
+body.dark-mode .navbar a,
+body.dark-mode .footer-links a {
+  color: #bfdbfe !important;
+}
+
+body.dark-mode a.button,
+body.dark-mode button.button {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .tag {
+  background-color: #263b60 !important;
+  color: #dbeafe !important;
+}
+
+body.dark-mode pre,
+body.dark-mode code {
+  background-color: #1e293b;
+  color: #f1f5f9;
+}
+
 
 
 
